@@ -86,3 +86,13 @@ function getCurrentColorAndChangeIt () {
 function getRandomNumber (min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
+function hack () {
+    function clickIt () {
+        const circle = board.querySelector('.circle');
+        if (circle) {
+            circle.click();
+        }
+    }
+    setInterval(clickIt, 75)
+}
